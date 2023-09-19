@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ball {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(deeppink, deeppink),
+          linear-gradient(deepskyblue, deepskyblue);
+        /* 应用叠加混合模式 */
+        background-blend-mode: overlay;
+      }
+      .ball2 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(deepskyblue, deepskyblue),
+          linear-gradient(deeppink, deeppink);
+        /* 应用叠加混合模式 */
+        background-blend-mode: overlay;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+    <div class="ball2"></div>
+  </body>
+</html>
