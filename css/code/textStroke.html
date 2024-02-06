@@ -18,6 +18,26 @@
       .text {
         -webkit-text-stroke: 2px #333;
       }
+
+      /* 实例 */
+      .stroke {
+        color: #ff3f01;
+        font-size: 100px;
+        text-stroke: 8px #ffffff;
+        -webkit-text-stroke: 8px #ffffff;
+        /* 此处的text-stroke值=正常text-stroke值*2 */
+        position: relative;
+      }
+      .stroke::before {
+        content: attr(data-title);
+        position: absolute;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 0;
+        /* z-index: 3;
+        display: block;
+        width: -webkit-fill-available; */
+      }
     </style>
   </head>
   <body>
